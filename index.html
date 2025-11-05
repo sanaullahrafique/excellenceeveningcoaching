@@ -271,170 +271,389 @@
     </section>
 
     <!-- Courses Section -->
-    <section id="courses" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-            Our Courses
+    <section id="courses" class="py-20 bg-gradient-to-br from-indigo-50 via-white to-cyan-50 relative overflow-hidden">
+      <!-- Background Animation Elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute top-10 right-20 w-40 h-40 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-float"></div>
+        <div class="absolute bottom-10 left-20 w-32 h-32 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-float" style="animation-delay: 3s;"></div>
+        <div class="absolute top-1/2 right-10 w-24 h-24 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-float" style="animation-delay: 1.5s;"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Enhanced Header -->
+        <div class="text-center mb-20">
+          <div class="inline-block mb-6">
+            <span class="bg-gradient-to-r from-indigo-600 to-purple-600 text-transparent bg-clip-text text-lg font-semibold animate-pulse">
+              📚 Academic Excellence Programs
+            </span>
+          </div>
+          <h2 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in-up leading-tight">
+            Our 
+            <span class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+              Courses
+            </span>
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up">
-            Comprehensive coaching programs designed to excel in academics and
-            competitive exams
+          <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up leading-relaxed mb-8">
+            🎯 Comprehensive coaching programs designed to excel in academics and competitive exams
+            <br class="hidden md:block">
+            <span class="text-indigo-600 font-semibold">From foundation to university entrance</span> - we've got you covered!
           </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- 9th Class -->
-          <div
-            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
-          >
-            <div
-              class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-book text-blue-600 text-2xl"></i>
+          
+          <!-- Course Stats -->
+          <div class="flex flex-wrap justify-center gap-6 text-sm font-semibold animate-fade-in-up">
+            <div class="flex items-center bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">
+              <i class="fas fa-users mr-2"></i>
+              4 Comprehensive Programs
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">
-              9th Class
-            </h3>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Mathematics
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Physics
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Chemistry
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Biology
-              </li>
-            </ul>
-            <button
-              class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              Learn More
-            </button>
-          </div>
-
-          <!-- 10th Class -->
-          <div
-            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
-            style="animation-delay: 0.1s"
-          >
-            <div
-              class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-graduation-cap text-green-600 text-2xl"></i>
+            <div class="flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full">
+              <i class="fas fa-clock mr-2"></i>
+              Evening Batches Available
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">
-              10th Class
-            </h3>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Mathematics
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Physics
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Chemistry
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Biology
-              </li>
-            </ul>
-            <button
-              class="w-full mt-6 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors"
-            >
-              Learn More
-            </button>
-          </div>
-
-          <!-- 1st Year -->
-          <div
-            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
-            style="animation-delay: 0.2s"
-          >
-            <div
-              class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-flask text-purple-600 text-2xl"></i>
+            <div class="flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full">
+              <i class="fas fa-certificate mr-2"></i>
+              Expert Faculty
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">
-              1st Year
-            </h3>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Pre-Medical
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Pre-Engineering
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                MDCAT Prep
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                ECAT Prep
-              </li>
-            </ul>
-            <button
-              class="w-full mt-6 bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors"
-            >
-              Learn More
-            </button>
-          </div>
-
-          <!-- 2nd Year -->
-          <div
-            class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 animate-fade-in-up"
-            style="animation-delay: 0.3s"
-          >
-            <div
-              class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-            >
-              <i class="fas fa-microscope text-orange-600 text-2xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-900 text-center mb-4">
-              2nd Year
-            </h3>
-            <ul class="space-y-3 text-gray-600">
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                Advanced Sciences
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                MDCAT Intensive
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                ECAT Intensive
-              </li>
-              <li class="flex items-center">
-                <i class="fas fa-check-circle text-green-500 mr-3"></i>
-                University Prep
-              </li>
-            </ul>
-            <button
-              class="w-full mt-6 bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition-colors"
-            >
-              Learn More
-            </button>
           </div>
         </div>
+
+        <!-- Enhanced Course Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <!-- 9th Class - Enhanced -->
+          <div class="group bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 animate-fade-in-up border border-white/20 relative overflow-hidden">
+            <!-- Background Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div class="relative z-10">
+              <!-- Enhanced Icon -->
+              <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i class="fas fa-book text-3xl"></i>
+              </div>
+              
+              <!-- Course Badge -->
+              <div class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full text-center mb-4">
+                FOUNDATION LEVEL
+              </div>
+              
+              <!-- Course Title -->
+              <h3 class="text-2xl font-bold text-gray-900 text-center mb-2 group-hover:text-blue-600 transition-colors">
+                📚 9th Class
+              </h3>
+              <p class="text-center text-gray-500 text-sm mb-6">Building Strong Foundations</p>
+              
+              <!-- Subjects List -->
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-blue-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-calculator text-blue-500 mr-3"></i>
+                    <span class="font-medium">Mathematics</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-blue-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-atom text-blue-500 mr-3"></i>
+                    <span class="font-medium">Physics</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-blue-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-flask text-blue-500 mr-3"></i>
+                    <span class="font-medium">Chemistry</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-blue-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-dna text-blue-500 mr-3"></i>
+                    <span class="font-medium">Biology</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+              
+              <!-- Course Features -->
+              <div class="text-xs text-gray-600 mb-6 space-y-1">
+                <div class="flex items-center">
+                  <i class="fas fa-clock text-blue-500 mr-2"></i>
+                  <span>Evening Batches: 5:00 PM - 7:00 PM</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-users text-blue-500 mr-2"></i>
+                  <span>Small Batch Size: 15-20 Students</span>
+                </div>
+              </div>
+              
+              <!-- Action Button -->
+              <button class="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-4 px-6 rounded-2xl font-bold hover:from-blue-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-rocket"></i>
+                <span>Enroll Now</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 10th Class - Enhanced -->
+          <div class="group bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 animate-fade-in-up border border-white/20 relative overflow-hidden" style="animation-delay: 0.1s">
+            <!-- Background Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-green-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div class="relative z-10">
+              <!-- Enhanced Icon -->
+              <div class="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i class="fas fa-graduation-cap text-3xl"></i>
+              </div>
+              
+              <!-- Course Badge -->
+              <div class="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full text-center mb-4">
+                MATRICULATION
+              </div>
+              
+              <!-- Course Title -->
+              <h3 class="text-2xl font-bold text-gray-900 text-center mb-2 group-hover:text-green-600 transition-colors">
+                🎓 10th Class
+              </h3>
+              <p class="text-center text-gray-500 text-sm mb-6">Board Exam Excellence</p>
+              
+              <!-- Subjects List -->
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-green-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-calculator text-green-500 mr-3"></i>
+                    <span class="font-medium">Mathematics</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-green-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-atom text-green-500 mr-3"></i>
+                    <span class="font-medium">Physics</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-green-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-flask text-green-500 mr-3"></i>
+                    <span class="font-medium">Chemistry</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-green-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-dna text-green-500 mr-3"></i>
+                    <span class="font-medium">Biology</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+              </div>
+              
+              <!-- Course Features -->
+              <div class="text-xs text-gray-600 mb-6 space-y-1">
+                <div class="flex items-center">
+                  <i class="fas fa-clock text-green-500 mr-2"></i>
+                  <span>Evening Batches: 5:00 PM - 7:00 PM</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-trophy text-green-500 mr-2"></i>
+                  <span>Board Exam Focused</span>
+                </div>
+              </div>
+              
+              <!-- Action Button -->
+              <button class="w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 px-6 rounded-2xl font-bold hover:from-green-600 hover:to-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-rocket"></i>
+                <span>Enroll Now</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 1st Year - Enhanced -->
+          <div class="group bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 animate-fade-in-up border border-white/20 relative overflow-hidden" style="animation-delay: 0.2s">
+            <!-- Background Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div class="relative z-10">
+              <!-- Enhanced Icon -->
+              <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i class="fas fa-flask text-3xl"></i>
+              </div>
+              
+              <!-- Course Badge -->
+              <div class="bg-purple-100 text-purple-800 text-xs font-bold px-3 py-1 rounded-full text-center mb-4">
+                INTERMEDIATE
+              </div>
+              
+              <!-- Course Title -->
+              <h3 class="text-2xl font-bold text-gray-900 text-center mb-2 group-hover:text-purple-600 transition-colors">
+                🔬 1st Year
+              </h3>
+              <p class="text-center text-gray-500 text-sm mb-6">Pre-Medical & Pre-Engineering</p>
+              
+              <!-- Subjects List -->
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-purple-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-heartbeat text-purple-500 mr-3"></i>
+                    <span class="font-medium">Pre-Medical</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-purple-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-cogs text-purple-500 mr-3"></i>
+                    <span class="font-medium">Pre-Engineering</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-purple-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-stethoscope text-purple-500 mr-3"></i>
+                    <span class="font-medium">MDCAT Prep</span>
+                  </div>
+                  <i class="fas fa-fire text-red-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-purple-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-calculator text-purple-500 mr-3"></i>
+                    <span class="font-medium">ECAT Prep</span>
+                  </div>
+                  <i class="fas fa-fire text-red-400"></i>
+                </div>
+              </div>
+              
+              <!-- Course Features -->
+              <div class="text-xs text-gray-600 mb-6 space-y-1">
+                <div class="flex items-center">
+                  <i class="fas fa-clock text-purple-500 mr-2"></i>
+                  <span>Evening Batches: 7:00 PM - 9:00 PM</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-target text-purple-500 mr-2"></i>
+                  <span>Entry Test Focused</span>
+                </div>
+              </div>
+              
+              <!-- Action Button -->
+              <button class="w-full bg-gradient-to-r from-purple-500 to-purple-600 text-white py-4 px-6 rounded-2xl font-bold hover:from-purple-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-rocket"></i>
+                <span>Enroll Now</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 2nd Year - Enhanced -->
+          <div class="group bg-white/90 backdrop-blur-lg rounded-3xl shadow-2xl p-8 hover:shadow-3xl transform hover:-translate-y-4 transition-all duration-500 animate-fade-in-up border border-white/20 relative overflow-hidden" style="animation-delay: 0.3s">
+            <!-- Background Gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-orange-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            <div class="relative z-10">
+              <!-- Enhanced Icon -->
+              <div class="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-2xl w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <i class="fas fa-microscope text-3xl"></i>
+              </div>
+              
+              <!-- Course Badge -->
+              <div class="bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full text-center mb-4">
+                ADVANCED LEVEL
+              </div>
+              
+              <!-- Course Title -->
+              <h3 class="text-2xl font-bold text-gray-900 text-center mb-2 group-hover:text-orange-600 transition-colors">
+                🎯 2nd Year
+              </h3>
+              <p class="text-center text-gray-500 text-sm mb-6">University Entrance Mastery</p>
+              
+              <!-- Subjects List -->
+              <div class="space-y-3 mb-6">
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-orange-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-atom text-orange-500 mr-3"></i>
+                    <span class="font-medium">Advanced Sciences</span>
+                  </div>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-orange-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-stethoscope text-orange-500 mr-3"></i>
+                    <span class="font-medium">MDCAT Intensive</span>
+                  </div>
+                  <i class="fas fa-fire text-red-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-orange-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-calculator text-orange-500 mr-3"></i>
+                    <span class="font-medium">ECAT Intensive</span>
+                  </div>
+                  <i class="fas fa-fire text-red-400"></i>
+                </div>
+                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl group-hover:bg-orange-50 transition-colors">
+                  <div class="flex items-center">
+                    <i class="fas fa-university text-orange-500 mr-3"></i>
+                    <span class="font-medium">University Prep</span>
+                  </div>
+                  <i class="fas fa-crown text-yellow-400"></i>
+                </div>
+              </div>
+              
+              <!-- Course Features -->
+              <div class="text-xs text-gray-600 mb-6 space-y-1">
+                <div class="flex items-center">
+                  <i class="fas fa-clock text-orange-500 mr-2"></i>
+                  <span>Evening Batches: 7:00 PM - 9:00 PM</span>
+                </div>
+                <div class="flex items-center">
+                  <i class="fas fa-trophy text-orange-500 mr-2"></i>
+                  <span>Success Guarantee Program</span>
+                </div>
+              </div>
+              
+              <!-- Action Button -->
+              <button class="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 px-6 rounded-2xl font-bold hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-rocket"></i>
+                <span>Enroll Now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Comparison & CTA Section -->
+        <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden animate-fade-in-up">
+          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="relative z-10">
+            <div class="text-center mb-8">
+              <h3 class="text-3xl md:text-4xl font-bold mb-4">🚀 Not Sure Which Course to Choose?</h3>
+              <p class="text-xl text-indigo-100 mb-6">Get personalized guidance from our expert counselors!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
+                <i class="fas fa-phone text-3xl mb-4"></i>
+                <h4 class="font-bold mb-2">Free Consultation</h4>
+                <p class="text-sm text-indigo-100">Call us for personalized course guidance</p>
+              </div>
+              <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
+                <i class="fas fa-calendar text-3xl mb-4"></i>
+                <h4 class="font-bold mb-2">Free Trial Class</h4>
+                <p class="text-sm text-indigo-100">Experience our teaching methodology</p>
+              </div>
+              <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
+                <i class="fas fa-gift text-3xl mb-4"></i>
+                <h4 class="font-bold mb-2">Early Bird Discount</h4>
+                <p class="text-sm text-indigo-100">Save 20% on early enrollments</p>
+              </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <button class="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fas fa-phone"></i>
+                <span>Get Free Consultation</span>
+              </button>
+              <button class="bg-green-500 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg flex items-center justify-center space-x-2">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp Now</span>
+              </button>
+            </div>
+          </div>
+        </div>""
       </div>
     </section>
     ""
