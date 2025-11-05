@@ -670,148 +670,301 @@
     </section>
     ""
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4 animate-fade-in-up">
-            Get In Touch
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden"
+    >
+      <!-- Background Animation Elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute -top-40 -right-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"
+        ></div>
+        <div
+          class="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"
+          style="animation-delay: 2s"
+        ></div>
+        <div
+          class="absolute top-40 left-1/2 w-60 h-60 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-float"
+          style="animation-delay: 4s"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Enhanced Header -->
+        <div class="text-center mb-20">
+          <div class="inline-block mb-4">
+            <span
+              class="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text text-lg font-semibold animate-pulse"
+            >
+              💬 Let's Connect
+            </span>
+          </div>
+          <h2
+            class="text-5xl md:text-6xl font-bold text-gray-900 mb-6 animate-fade-in-up"
+          >
+            Get In
+            <span
+              class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text animate-pulse"
+            >
+              Touch
+            </span>
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in-up">
-            Ready to start your journey towards academic excellence? Contact us
-            today!
+          <p
+            class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto animate-fade-in-up leading-relaxed"
+          >
+            🚀 Ready to start your journey towards academic excellence?
+            <br class="hidden md:block" />
+            <span class="text-blue-600 font-semibold"
+              >Join 500+ successful students</span
+            >
+            and contact us today!
           </p>
+
+          <!-- Quick Contact Buttons -->
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in-up"
+          >
+            <a
+              href="tel:+923001234567"
+              class="inline-flex items-center px-6 py-3 bg-green-500 text-white rounded-full hover:bg-green-600 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              <i class="fas fa-phone mr-2"></i>
+              Call Now
+            </a>
+            <a
+              href="https://wa.me/923001234567"
+              class="inline-flex items-center px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              <i class="fab fa-whatsapp mr-2"></i>
+              WhatsApp
+            </a>
+            <a
+              href="mailto:info@excellencecoaching.com"
+              class="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
+            >
+              <i class="fas fa-envelope mr-2"></i>
+              Email Us
+            </a>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <!-- Contact Form -->
-          <div class="animate-fade-in-left">
-            <div class="bg-white rounded-2xl shadow-lg p-8">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                Send us a Message
-              </h3>
+          <div class="lg:col-span-2 animate-fade-in-left">
+            <div
+              class="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500"
+            >
+              <div class="flex items-center mb-8">
+                <div
+                  class="bg-gradient-to-r from-blue-500 to-purple-600 rounded-full p-3 mr-4 animate-pulse"
+                >
+                  <i class="fas fa-paper-plane text-white text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-3xl font-bold text-gray-900">
+                    Send us a Message
+                  </h3>
+                  <p class="text-gray-600">
+                    We'll get back to you within 24 hours!
+                  </p>
+                </div>
+              </div>
+
               <form class="space-y-6">
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Full Name</label
-                  >
-                  <input
-                    type="text"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  />
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="group">
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors"
+                    >
+                      <i class="fas fa-user mr-2"></i>Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="Enter your full name"
+                      class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 hover:border-gray-300"
+                    />
+                  </div>
+                  <div class="group">
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors"
+                    >
+                      <i class="fas fa-envelope mr-2"></i>Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="your.email@example.com"
+                      class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 hover:border-gray-300"
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Email Address</label
-                  >
-                  <input
-                    type="email"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  />
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="group">
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors"
+                    >
+                      <i class="fas fa-phone mr-2"></i>Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="+92 300 1234567"
+                      class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 hover:border-gray-300"
+                    />
+                  </div>
+                  <div class="group">
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors"
+                    >
+                      <i class="fas fa-graduation-cap mr-2"></i>Course Interest
+                    </label>
+                    <select
+                      class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 hover:border-gray-300"
+                    >
+                      <option>Select a course</option>
+                      <option>9th Class - Foundation</option>
+                      <option>10th Class - Matriculation</option>
+                      <option>1st Year - Pre-Medical/Engineering</option>
+                      <option>2nd Year - MDCAT/ECAT Prep</option>
+                      <option>All Courses</option>
+                    </select>
+                  </div>
                 </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Phone Number</label
+
+                <div class="group">
+                  <label
+                    class="block text-sm font-semibold text-gray-700 mb-2 group-focus-within:text-blue-600 transition-colors"
                   >
-                  <input
-                    type="tel"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  />
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Course Interest</label
-                  >
-                  <select
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                  >
-                    <option>Select a course</option>
-                    <option>9th Class</option>
-                    <option>10th Class</option>
-                    <option>1st Year</option>
-                    <option>2nd Year</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-sm font-medium text-gray-700 mb-2"
-                    >Message</label
-                  >
+                    <i class="fas fa-comment-dots mr-2"></i>Your Message
+                  </label>
                   <textarea
-                    rows="4"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    rows="5"
+                    placeholder="Tell us about your academic goals, preferred timing, or any questions you have..."
+                    class="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 hover:border-gray-300 resize-none"
                   ></textarea>
                 </div>
+
+                <div class="flex items-center space-x-3 text-sm text-gray-600">
+                  <i class="fas fa-shield-alt text-green-500"></i>
+                  <span
+                    >Your information is secure and will never be shared with
+                    third parties.</span
+                  >
+                </div>
+
                 <button
                   type="submit"
-                  class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300"
+                  class="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white py-4 px-8 rounded-xl font-semibold text-lg hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center space-x-2"
                 >
-                  Send Message
+                  <i class="fas fa-rocket"></i>
+                  <span>Send Message & Start Your Journey</span>
                 </button>
               </form>
             </div>
           </div>
 
-          <!-- Contact Information -->
-          <div class="animate-fade-in-right">
-            <div class="space-y-8">
-              <div class="bg-white rounded-2xl shadow-lg p-8">
-                <h3 class="text-2xl font-bold text-gray-900 mb-6">
-                  Contact Information
-                </h3>
-                <div class="space-y-6">
-                  <div class="flex items-center">
-                    <div class="bg-blue-100 rounded-full p-3 mr-4">
-                      <i class="fas fa-map-marker-alt text-blue-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-900">Address</h4>
-                      <p class="text-gray-600">
-                        123 Education Street, Learning City
-                      </p>
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div class="bg-green-100 rounded-full p-3 mr-4">
-                      <i class="fas fa-phone text-green-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-900">Phone</h4>
-                      <p class="text-gray-600">+92 300 1234567</p>
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div class="bg-purple-100 rounded-full p-3 mr-4">
-                      <i class="fas fa-envelope text-purple-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-900">Email</h4>
-                      <p class="text-gray-600">info@excellencecoaching.com</p>
-                    </div>
-                  </div>
-                  <div class="flex items-center">
-                    <div class="bg-orange-100 rounded-full p-3 mr-4">
-                      <i class="fas fa-clock text-orange-600"></i>
-                    </div>
-                    <div>
-                      <h4 class="font-semibold text-gray-900">Timing</h4>
-                      <p class="text-gray-600">Mon - Sat: 5:00 PM - 9:00 PM</p>
-                    </div>
-                  </div>
+          <!-- Contact Information & Quick Actions -->
+          <div class="animate-fade-in-right space-y-6">
+            <!-- Contact Info Card -->
+            <div
+              class="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl p-8 border border-white/20 hover:shadow-3xl transition-all duration-500"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="bg-gradient-to-r from-green-500 to-blue-600 rounded-full p-3 mr-4 animate-pulse"
+                >
+                  <i class="fas fa-address-book text-white text-xl"></i>
                 </div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Contact Details
+                </h3>
               </div>
 
-              <div
-                class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl shadow-lg p-8 text-white"
-              >
-                <h3 class="text-2xl font-bold mb-4">Ready to Excel?</h3>
-                <p class="mb-6">
-                  Join hundreds of successful students who have achieved their
-                  academic goals with us.
-                </p>
-                <button
-                  class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transform hover:scale-105 transition-all duration-300"
+              <div class="space-y-5">
+                <div
+                  class="group flex items-center p-4 rounded-2xl hover:bg-blue-50 transition-all duration-300 cursor-pointer"
                 >
-                  Enroll Today
-                </button>
+                  <div
+                    class="bg-gradient-to-r from-blue-500 to-blue-600 rounded-full p-3 mr-4 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-map-marker-alt text-white"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="font-bold text-gray-900 group-hover:text-blue-600 transition-colors"
+                    >
+                      📍 Visit Us
+                    </h4>
+                    <p class="text-gray-600">
+                      Dar e Arqam School Girls Campus, DC Road Toba Tek Singh
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex items-center p-4 rounded-2xl hover:bg-green-50 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="bg-gradient-to-r from-green-500 to-green-600 rounded-full p-3 mr-4 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-phone text-white"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="font-bold text-gray-900 group-hover:text-green-600 transition-colors"
+                    >
+                      📞 Call Us
+                    </h4>
+                    <p class="text-gray-600 font-semibold">+92334 4086636</p>
+                    <p class="text-sm text-green-600">Available 24/7 →</p>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex items-center p-4 rounded-2xl hover:bg-purple-50 transition-all duration-300 cursor-pointer"
+                >
+                  <div
+                    class="bg-gradient-to-r from-purple-500 to-purple-600 rounded-full p-3 mr-4 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-envelope text-white"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="font-bold text-gray-900 group-hover:text-purple-600 transition-colors"
+                    >
+                      ✉️ Email Us
+                    </h4>
+                    <p class="text-gray-600">info@excellencecoaching.com</p>
+                    <p class="text-sm text-purple-600">
+                      Quick response guaranteed →
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="group flex items-center p-4 rounded-2xl hover:bg-orange-50 transition-all duration-300"
+                >
+                  <div
+                    class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-full p-3 mr-4 group-hover:scale-110 transition-transform"
+                  >
+                    <i class="fas fa-clock text-white"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="font-bold text-gray-900 group-hover:text-orange-600 transition-colors"
+                    >
+                      🕐 Class Timings
+                    </h4>
+                    <p class="text-gray-600 font-semibold">
+                      Mon - Sat: 3:00 PM - 7:00 PM
+                    </p>
+                    <p class="text-sm text-orange-600">
+                      Evening sessions perfect for students
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
