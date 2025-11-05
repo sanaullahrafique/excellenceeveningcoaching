@@ -102,65 +102,192 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="pt-16 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white min-h-screen flex items-center"
+      class="pt-16 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 text-white min-h-screen flex items-center relative overflow-hidden"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="animate-fade-in-up">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Excellence in
-              <span class="text-yellow-300 animate-pulse">Education</span>
-            </h1>
-            <p class="text-xl md:text-2xl mb-8 text-blue-100">
-              Empowering students for 9th, 10th, 1st & 2nd Year with quality
-              coaching and modern teaching methods
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <button
-                class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transform hover:scale-105 transition-all duration-300"
-              >
-                Enroll Now
+      <!-- Enhanced Background Animation Elements -->
+      <div class="absolute inset-0 overflow-hidden">
+        <!-- Floating Geometric Shapes -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-yellow-400/20 to-orange-400/20 rounded-full mix-blend-multiply filter blur-xl animate-float" style="animation-delay: 4s;"></div>
+        
+        <!-- Animated Grid Pattern -->
+        <div class="absolute inset-0 opacity-10">
+          <div class="grid grid-cols-12 gap-4 h-full">
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 0.5s;"></div>
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 1s;"></div>
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 1.5s;"></div>
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 2s;"></div>
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 2.5s;"></div>
+            <div class="bg-white/5 animate-pulse" style="animation-delay: 3s;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <!-- Enhanced Left Content -->
+          <div class="animate-fade-in-up space-y-8">
+            <!-- Badge -->
+            <div class="inline-flex items-center bg-white/10 backdrop-blur-lg rounded-full px-6 py-3 border border-white/20">
+              <i class="fas fa-star text-yellow-400 mr-2 animate-pulse"></i>
+              <span class="text-sm font-semibold">Pakistan's Leading Evening Coaching Institute</span>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="space-y-4">
+              <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                <span class="bg-gradient-to-r from-white via-blue-100 to-purple-100 text-transparent bg-clip-text">
+                  Excellence
+                </span>
+                <br>
+                <span class="text-white">in</span>
+                <br>
+                <span class="bg-gradient-to-r from-yellow-300 via-orange-300 to-pink-300 text-transparent bg-clip-text animate-pulse">
+                  Education
+                </span>
+              </h1>
+              
+              <!-- Animated Underline -->
+              <div class="w-32 h-1 bg-gradient-to-r from-yellow-400 to-pink-400 rounded-full animate-pulse"></div>
+            </div>
+
+            <!-- Enhanced Description -->
+            <div class="space-y-4">
+              <p class="text-xl md:text-2xl text-blue-100 leading-relaxed">
+                🚀 <span class="font-semibold text-white">Transforming Dreams into Reality</span> for students in 
+                <span class="text-yellow-300 font-bold">9th, 10th, 1st & 2nd Year</span>
+              </p>
+              <p class="text-lg text-purple-100">
+                ✨ Where quality coaching meets modern teaching methods to create tomorrow's leaders
+              </p>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap gap-4 text-sm">
+              <div class="flex items-center bg-green-500/20 backdrop-blur-lg text-green-300 px-4 py-2 rounded-full border border-green-400/30">
+                <i class="fas fa-check-circle mr-2"></i>
+                <span class="font-semibold">500+ Success Stories</span>
+              </div>
+              <div class="flex items-center bg-blue-500/20 backdrop-blur-lg text-blue-300 px-4 py-2 rounded-full border border-blue-400/30">
+                <i class="fas fa-award mr-2"></i>
+                <span class="font-semibold">95% Success Rate</span>
+              </div>
+              <div class="flex items-center bg-purple-500/20 backdrop-blur-lg text-purple-300 px-4 py-2 rounded-full border border-purple-400/30">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                <span class="font-semibold">5+ Years Excellence</span>
+              </div>
+            </div>
+
+            <!-- Enhanced CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+              <button class="group bg-gradient-to-r from-yellow-400 via-orange-400 to-pink-400 text-gray-900 px-10 py-4 rounded-2xl font-bold text-lg hover:from-yellow-300 hover:via-orange-300 hover:to-pink-300 transform hover:scale-105 transition-all duration-300 shadow-2xl flex items-center justify-center space-x-3">
+                <i class="fas fa-rocket group-hover:animate-bounce"></i>
+                <span>Start Your Journey</span>
+                <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
               </button>
-              <button
-                class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
-              >
-                Learn More
+              <button class="group bg-white/10 backdrop-blur-lg border-2 border-white/30 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-indigo-900 transition-all duration-300 flex items-center justify-center space-x-3">
+                <i class="fas fa-play-circle group-hover:animate-pulse"></i>
+                <span>Watch Success Stories</span>
               </button>
             </div>
+
+            <!-- Quick Contact -->
+            <div class="flex items-center space-x-6 pt-4">
+              <a href="tel:+923001234567" class="flex items-center text-green-300 hover:text-green-200 transition-colors">
+                <i class="fas fa-phone-alt mr-2 animate-pulse"></i>
+                <span class="font-semibold">Call Now</span>
+              </a>
+              <a href="https://wa.me/923001234567" class="flex items-center text-green-300 hover:text-green-200 transition-colors">
+                <i class="fab fa-whatsapp mr-2 animate-pulse"></i>
+                <span class="font-semibold">WhatsApp</span>
+              </a>
+            </div>
           </div>
+
+          <!-- Enhanced Right Content -->
           <div class="animate-fade-in-right">
             <div class="relative">
-              <div
-                class="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl p-8 animate-float"
-              >
-                <div class="grid grid-cols-2 gap-4 text-center">
-                  <div class="bg-yellow-400 text-blue-900 rounded-lg p-4">
-                    <i class="fas fa-graduation-cap text-3xl mb-2"></i>
-                    <div class="font-bold text-2xl">500+</div>
-                    <div class="text-sm">Students</div>
+              <!-- Main Stats Card -->
+              <div class="bg-white/10 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 shadow-2xl animate-float">
+                <!-- Header -->
+                <div class="text-center mb-8">
+                  <h3 class="text-2xl font-bold text-white mb-2">🏆 Our Achievements</h3>
+                  <p class="text-blue-200">Numbers that speak for themselves</p>
+                </div>
+
+                <!-- Enhanced Stats Grid -->
+                <div class="grid grid-cols-2 gap-6">
+                  <!-- Stat 1 -->
+                  <div class="group bg-gradient-to-br from-yellow-400 to-orange-400 text-gray-900 rounded-2xl p-6 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-center">
+                      <i class="fas fa-graduation-cap text-4xl mb-3 group-hover:animate-bounce"></i>
+                      <div class="font-bold text-3xl mb-1 counter" data-target="500">0</div>
+                      <div class="text-sm font-semibold">Happy Students</div>
+                      <div class="text-xs opacity-80 mt-1">& Growing Daily</div>
+                    </div>
                   </div>
-                  <div class="bg-green-400 text-green-900 rounded-lg p-4">
-                    <i class="fas fa-trophy text-3xl mb-2"></i>
-                    <div class="font-bold text-2xl">95%</div>
-                    <div class="text-sm">Success Rate</div>
+
+                  <!-- Stat 2 -->
+                  <div class="group bg-gradient-to-br from-green-400 to-emerald-400 text-gray-900 rounded-2xl p-6 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-center">
+                      <i class="fas fa-trophy text-4xl mb-3 group-hover:animate-bounce"></i>
+                      <div class="font-bold text-3xl mb-1 counter" data-target="95">0</div>
+                      <div class="text-sm font-semibold">Success Rate %</div>
+                      <div class="text-xs opacity-80 mt-1">Proven Results</div>
+                    </div>
                   </div>
-                  <div class="bg-purple-400 text-purple-900 rounded-lg p-4">
-                    <i class="fas fa-chalkboard-teacher text-3xl mb-2"></i>
-                    <div class="font-bold text-2xl">15+</div>
-                    <div class="text-sm">Expert Teachers</div>
+
+                  <!-- Stat 3 -->
+                  <div class="group bg-gradient-to-br from-purple-400 to-indigo-400 text-white rounded-2xl p-6 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-center">
+                      <i class="fas fa-chalkboard-teacher text-4xl mb-3 group-hover:animate-bounce"></i>
+                      <div class="font-bold text-3xl mb-1 counter" data-target="15">0</div>
+                      <div class="text-sm font-semibold">Expert Teachers</div>
+                      <div class="text-xs opacity-80 mt-1">PhD & Masters</div>
+                    </div>
                   </div>
-                  <div class="bg-pink-400 text-pink-900 rounded-lg p-4">
-                    <i class="fas fa-clock text-3xl mb-2"></i>
-                    <div class="font-bold text-2xl">5+</div>
-                    <div class="text-sm">Years Experience</div>
+
+                  <!-- Stat 4 -->
+                  <div class="group bg-gradient-to-br from-pink-400 to-rose-400 text-white rounded-2xl p-6 hover:scale-105 transition-all duration-300 shadow-lg">
+                    <div class="text-center">
+                      <i class="fas fa-clock text-4xl mb-3 group-hover:animate-bounce"></i>
+                      <div class="font-bold text-3xl mb-1 counter" data-target="5">0</div>
+                      <div class="text-sm font-semibold">Years Excellence</div>
+                      <div class="text-xs opacity-80 mt-1">Since 2019</div>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Bottom CTA -->
+                <div class="mt-8 text-center">
+                  <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-3 rounded-2xl font-semibold hover:from-blue-600 hover:to-purple-600 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <i class="fas fa-chart-line mr-2"></i>
+                    View Detailed Results
+                  </button>
+                </div>
+              </div>
+
+              <!-- Floating Elements -->
+              <div class="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 rounded-full w-16 h-16 flex items-center justify-center font-bold text-lg animate-bounce shadow-lg">
+                #1
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-green-400 text-gray-900 rounded-full w-12 h-12 flex items-center justify-center font-bold animate-pulse shadow-lg">
+                ⭐
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Bottom Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div class="flex flex-col items-center text-white/60">
+            <span class="text-sm mb-2">Discover More</span>
+            <i class="fas fa-chevron-down text-2xl"></i>
+          </div>
+        </div>
       </div>
-    </section>
+    </section>""
     <!-- About Section -->
     <section id="about" class="py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden">
       <!-- Background Animation Elements -->
