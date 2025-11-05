@@ -1716,7 +1716,7 @@
         </div>
       </div>
     </section>
-    ""
+
     <!-- Contact Section -->
     <section
       id="contact"
@@ -2129,7 +2129,7 @@
               </li>
               <li class="flex items-center">
                 <i class="fas fa-phone mr-2"></i>
-                +92 300 1234567
+                +92334 4086636
               </li>
               <li class="flex items-center">
                 <i class="fas fa-envelope mr-2"></i>
@@ -2288,6 +2288,151 @@
         e.preventDefault();
         alert("Thank you for your message! We will get back to you soon.");
       });
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <a
+        href="https://wa.me/923344086636?text=Hi! I'm interested in Excellence Evening Coaching. Can you provide more information about your courses?"
+        target="_blank"
+        class="whatsapp-float group bg-green-500 hover:bg-green-600 text-white rounded-full w-16 h-16 flex items-center justify-center shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300"
+        title="Chat with us on WhatsApp"
+      >
+        <i class="fab fa-whatsapp text-3xl group-hover:animate-pulse"></i>
+
+        <!-- Notification Badge -->
+        <div
+          class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-6 h-6 flex items-center justify-center font-bold animate-pulse"
+        >
+          1
+        </div>
+
+        <!-- Ripple Effect -->
+        <div
+          class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-20"
+        ></div>
+      </a>
+
+      <!-- Tooltip -->
+      <div
+        class="absolute bottom-20 right-0 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none transform translate-x-2"
+      >
+        💬 Chat with us on WhatsApp!
+        <div
+          class="absolute top-full right-4 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"
+        ></div>
+      </div>
+    </div>
+
+    <!-- WhatsApp Chat Popup -->
+    <div
+      id="whatsapp-popup"
+      class="fixed bottom-24 right-6 bg-white rounded-2xl shadow-2xl p-6 w-80 z-40 transform translate-y-full opacity-0 transition-all duration-500 border border-gray-200 hidden md:block"
+    >
+      <div class="flex items-center mb-4">
+        <div
+          class="bg-green-500 rounded-full w-12 h-12 flex items-center justify-center mr-3"
+        >
+          <i class="fab fa-whatsapp text-white text-xl"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-900">Excellence Evening Coaching</h4>
+          <p class="text-sm text-gray-600">Typically replies instantly</p>
+        </div>
+        <button
+          id="close-popup"
+          class="ml-auto text-gray-400 hover:text-gray-600 p-1"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-4 mb-4">
+        <p class="text-gray-700 text-sm">
+          👋 Hi there! Welcome to Excellence Evening Coaching.
+          <br /><br />
+          How can we help you today?
+          <br /><br />
+          🎓 Course Information<br />
+          📅 Admission Process<br />
+          💰 Fee Structure<br />
+          📞 Schedule a Call
+        </p>
+      </div>
+
+      <a
+        href="https://wa.me/923001234567?text=Hi! I'm interested in Excellence Evening Coaching. Can you provide more information about your courses?"
+        target="_blank"
+        class="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-semibold transition-colors flex items-center justify-center space-x-2"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <span>Start Conversation</span>
+      </a>
+    </div>
+
+    <!-- WhatsApp Button JavaScript -->
+    <script>
+      // WhatsApp popup functionality
+      const whatsappFloat = document.querySelector(".whatsapp-float");
+      const whatsappPopup = document.getElementById("whatsapp-popup");
+      const closePopup = document.getElementById("close-popup");
+      let popupTimeout;
+
+      if (whatsappFloat && whatsappPopup && closePopup) {
+        // Show popup after hovering on WhatsApp button for 2 seconds
+        whatsappFloat.addEventListener("mouseenter", () => {
+          popupTimeout = setTimeout(() => {
+            whatsappPopup.classList.remove("translate-y-full", "opacity-0");
+            whatsappPopup.classList.add("translate-y-0", "opacity-100");
+          }, 2000);
+        });
+
+        whatsappFloat.addEventListener("mouseleave", () => {
+          clearTimeout(popupTimeout);
+        });
+
+        // Close popup
+        closePopup.addEventListener("click", () => {
+          whatsappPopup.classList.add("translate-y-full", "opacity-0");
+          whatsappPopup.classList.remove("translate-y-0", "opacity-100");
+        });
+
+        // Auto-show popup after 30 seconds (first visit)
+        if (!localStorage.getItem("whatsapp-popup-shown")) {
+          setTimeout(() => {
+            whatsappPopup.classList.remove("translate-y-full", "opacity-0");
+            whatsappPopup.classList.add("translate-y-0", "opacity-100");
+            localStorage.setItem("whatsapp-popup-shown", "true");
+
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+              whatsappPopup.classList.add("translate-y-full", "opacity-0");
+              whatsappPopup.classList.remove("translate-y-0", "opacity-100");
+            }, 10000);
+          }, 30000);
+        }
+
+        // Hide popup when clicking outside
+        document.addEventListener("click", (e) => {
+          if (
+            !whatsappPopup.contains(e.target) &&
+            !whatsappFloat.contains(e.target)
+          ) {
+            whatsappPopup.classList.add("translate-y-full", "opacity-0");
+            whatsappPopup.classList.remove("translate-y-0", "opacity-100");
+          }
+        });
+      }
+
+      // Add floating animation to WhatsApp button
+      if (whatsappFloat) {
+        setInterval(() => {
+          whatsappFloat.style.animation = "none";
+          setTimeout(() => {
+            whatsappFloat.style.animation = "bounce 1s ease-in-out";
+          }, 10);
+        }, 5000);
+      }
     </script>
   </body>
 </html>
